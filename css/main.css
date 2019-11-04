@@ -8,13 +8,12 @@
 }
 
 .min-height {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
 }
-
 /******************
  * HERO
  ******************/
@@ -53,6 +52,14 @@
         width: 90%;
         margin: 0 5% 25px;
     }
+        .hero > form > input {
+            color: #fff;
+            border-bottom-color: #fff;
+            outline: none;
+        }
+        .hero > form > input::placeholder {
+            color: #fff;
+        }
     .hero > .mouse {
         display: inline-block;
     }
@@ -101,9 +108,13 @@
         display: inline-block;
         width: 100%;
     }
-
-
-
+        .content form input {
+            width: 45%;
+            float: left;
+        }
+        .content form input[name="email"] {
+            float: right;
+        }
 
 /******************
  * FOOTER
